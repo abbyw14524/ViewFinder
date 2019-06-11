@@ -50,7 +50,7 @@
         <!--Add New Photo-->
         <scene sceneID="3dS-g5-oxn">
             <objects>
-                <viewController id="dOT-xr-TQD" sceneMemberID="viewController">
+                <viewController id="dOT-xr-TQD" customClass="AddPhotoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zr7-0M-zgm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
