@@ -65,32 +65,52 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textField:" destination="dOT-xr-TQD" eventType="editingDidEnd" id="9bq-RF-zMr"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zR9-7H-Lz6">
                                 <rect key="frame" x="16" y="366" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraButton:" destination="dOT-xr-TQD" eventType="touchUpInside" id="N0t-w9-o2q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzs-z5-Qjm">
                                 <rect key="frame" x="252" y="366" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="photoLibraryButton:" destination="dOT-xr-TQD" eventType="touchUpInside" id="5rJ-la-UzD"/>
+                                    <action selector="saveButton:" destination="dOT-xr-TQD" eventType="touchUpInside" id="4by-Xd-018"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2K-Tb-xxZ">
                                 <rect key="frame" x="349" y="366" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Album"/>
+                                <connections>
+                                    <action selector="albumButton:" destination="dOT-xr-TQD" eventType="touchUpInside" id="OF6-OF-TV2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmO-vg-jR5">
                                 <rect key="frame" x="110" y="366" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Photo Library"/>
+                                <connections>
+                                    <action selector="photoLibraryButton:" destination="dOT-xr-TQD" eventType="touchUpInside" id="2Lt-uv-gHO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fG7-Yi-tvb"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="Bjo-td-s5A"/>
+                    <connections>
+                        <outlet property="imageView" destination="DOB-78-p4s" id="F84-fm-brO"/>
+                        <outlet property="textField" destination="NbZ-sF-jyI" id="MhD-TD-2bO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oC7-uC-cmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
